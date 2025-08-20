@@ -18,7 +18,7 @@ if prompt := st.chat_input("Find a developer for..."):
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             response = requests.post(
-                "https://6266b07bd089.ngrok-free.app", # Make sure your backend is running
+                "https://6266b07bd089.ngrok-free.app/chat", # Make sure your backend is running
                 json={"query": prompt}
             )
             ai_response = response.json().get("response")
