@@ -1,12 +1,15 @@
-HR Resource Query Chatbot
+**HR Resource Query Chatbot**
+
 This document outlines the project deliverables for the AI-powered HR assistant. The application uses a Retrieval-Augmented Generation (RAG) pipeline and a local LLM via Ollama to help HR teams find the best employees for their needs.
 
 Frontend: Streamlit · Backend: FastAPI
 
-Project Deliverables
+**Project Deliverables**
+
 This project fulfills the three core submission requirements: a complete GitHub repository, a working local demo, and comprehensive README.md documentation.
 
-1. GitHub Repository with Complete Source Code
+**1. GitHub Repository with Complete Source Code**
+
 The repository is structured with a decoupled frontend and backend for clarity and scalability.
 
 hr-chatbot/
@@ -24,24 +27,30 @@ hr-chatbot/
 ├── .gitignore               # Files to ignore for Git
 └── README.md                # This file
 
-2. Working Demo (Local Setup)
+**2. Working Demo (Local Setup)**
 The application is designed to run locally, ensuring data privacy. To run the demo, you will need to start the backend server and the frontend application in two separate terminals. The complete instructions are provided in the Setup and Installation section below.
 
-3. README.md
-The remainder of this document serves as the project's official README.md, containing the required sections for setup, API documentation, architecture, and the AI development process.
+**3. README.md**
+The remainder of this document serves as the project's official README.md, containing the required sections for setup, API documentation, architecture, and the 
 
-Setup and Installation Instructions
-Prerequisites
+**AI development process.**
+
+**Setup and Installation Instructions**
+
+**Prerequisites**
+
 Python 3.8+
 
 Ollama: Install from ollama.com.
 
-Ollama (Local LLM) Setup
+**Ollama (Local LLM) Setup**
+
 First, ensure the Ollama application is running. Then, open a terminal and pull the llama3 model.
 
 ollama pull llama3
 
-Backend Setup
+**Backend Setup**
+
 Navigate to the backend directory, install dependencies, and start the server.
 
 # Go into the backend folder
@@ -59,7 +68,8 @@ uvicorn main:app --reload --port 8000
 
 The backend will be running on http://127.0.0.1:8000.
 
-Frontend Setup
+**Frontend Setup**
+
 Open a new terminal. Navigate to the frontend directory, install dependencies, and run the app.
 
 # Go into the frontend folder
@@ -76,7 +86,8 @@ streamlit run app.py
 
 Your browser will open with the chat interface at http://localhost:8501.
 
-API Documentation
+**API Documentation**
+
 The backend provides RESTful endpoints. Interactive documentation is also available via Swagger UI at http://127.0.0.1:8000/docs.
 
 GET /employees/search
@@ -101,29 +112,29 @@ Success Response (200 OK):
   "response": "Based on your query, Dr. Sarah Chen seems like an excellent fit..."
 }
 
-Architecture Overview
+**Architecture Overview**
 The application follows a decoupled frontend-backend architecture.
 
-User Interaction: The user types a query into the Streamlit frontend.
+**User Interaction:** The user types a query into the Streamlit frontend.
 
-API Call: The frontend sends a POST request to the /chat endpoint on the FastAPI backend.
+**API Call:** The frontend sends a POST request to the /chat endpoint on the FastAPI backend.
 
-RAG Pipeline (search.py):
+**RAG Pipeline (search.py):**
 
-Retrieve: The user's query is converted into an embedding vector using sentence-transformers. This vector is used to search the pre-built FAISS index to find the top 3 most semantically similar employee profiles.
+**Retrieve:** The user's query is converted into an embedding vector using sentence-transformers. This vector is used to search the pre-built FAISS index to find the top 3 most semantically similar employee profiles.
 
-Augment: The retrieved profiles are combined with the original query to create a detailed context prompt.
+**Augment:** The retrieved profiles are combined with the original query to create a detailed context prompt.
 
-Generate: This rich prompt is sent to the locally running Ollama instance (llama3 model) to generate a natural language summary.
+**Generate:** This rich prompt is sent to the locally running Ollama instance (llama3 model) to generate a natural language summary.
 
-Response: The generated text is sent back through the API to the Streamlit UI to be displayed to the user.
+**Response:** The generated text is sent back through the API to the Streamlit UI to be displayed to the user.
 
-AI Development Process Section
+**AI Development Process Section**
 This project was built with significant assistance from a generative AI model (Gemini), which acted as a development partner.
 
-Initial Planning & Scaffolding: I described the project goal from the assessment. The AI provided a clear end-to-end plan, recommending the FastAPI/Streamlit stack and the RAG architecture. It also generated the initial project structure with backend and frontend folders.
+**Initial Planning & Scaffolding:** I described the project goal from the assessment. The AI provided a clear end-to-end plan, recommending the FastAPI/Streamlit stack and the RAG architecture. It also generated the initial project structure with backend and frontend folders.
 
-Code Generation & Adaptation:
+**Code Generation & Adaptation:**
 
 The AI generated the complete, functional code for the RAGSystem class (search.py).
 
