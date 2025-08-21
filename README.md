@@ -6,28 +6,30 @@ Frontend: Streamlit · Backend: FastAPI
 
 **Features**
 
-Semantic Search: Understands the meaning behind queries to find the best employees, not just keyword matches.
+**Semantic Search:** Understands the meaning behind queries to find the best employees, not just keyword matches.
 
-RAG Pipeline: Utilizes sentence-transformers for embeddings, FAISS for efficient vector retrieval, and a local Large Language Model (Ollama) for generating human-like summaries.
+**RAG Pipeline:** Utilizes sentence-transformers for embeddings, FAISS for efficient vector retrieval, and a local Large Language Model (Ollama) for generating human-like summaries.
 
-REST API: Provides a clean interface for both simple keyword searches (/employees/search) and advanced AI chat (/chat).
+**REST API:** Provides a clean interface for both simple keyword searches (/employees/search) and advanced AI chat (/chat).
 
-Local First: Runs entirely on your local machine, ensuring data privacy and zero API costs.
+**Local First:** Runs entirely on your local machine, ensuring data privacy and zero API costs.
 
-Simple UI: A clean, intuitive chat interface built with Streamlit.
+**Simple UI:** A clean, intuitive chat interface built with Streamlit.
 
 Quick Start (Local Setup)
-1. Prerequisites
+**1. Prerequisites**
+
 Python 3.8+
 
 Ollama: Install from ollama.com.
 
-2. Setup Ollama (Local LLM)
+**2. Setup Ollama (Local LLM)**
+
 First, ensure the Ollama application is running. Then, open a terminal and pull the llama3 model.
 
 ollama pull llama3
 
-3. Backend Setup
+**3. Backend Setup**
 Navigate to the backend directory and install its dependencies.
 
 # Go into the backend folder
@@ -45,7 +47,8 @@ uvicorn main:app --reload --port 8000
 
 The backend is now running on http://127.0.0.1:8000.
 
-4. Frontend Setup
+**4. Frontend Setup**
+
 Open a new terminal. Navigate to the frontend directory.
 
 # Go into the frontend folder
