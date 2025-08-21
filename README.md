@@ -1,31 +1,20 @@
-**HR Resource Query Chatbot**
+# HR Resource Query Chatbot
 
 This document outlines the project deliverables for the AI-powered HR assistant. The application uses a Retrieval-Augmented Generation (RAG) pipeline and a local LLM via Ollama to help HR teams find the best employees for their needs.
 
 Frontend: Streamlit · Backend: FastAPI
 
-**Project Deliverables**
+## Project Deliverables
 
 This project fulfills the three core submission requirements: a complete GitHub repository, a working local demo, and comprehensive README.md documentation.
 
 **1. GitHub Repository with Complete Source Code**
 
-The repository is structured with a decoupled frontend and backend for clarity and scalability.
+The repository is structured with a decoupled frontend and backend for clarity and scalabiliy
 
-hr-chatbot/
-│
-├── backend/
-│   ├── main.py              # FastAPI app (API routes)
-│   ├── search.py            # RAGSystem (Embeddings, FAISS, Ollama Logic)
-│   ├── employees.json       # Sample employee dataset
-│   └── requirements.txt     # Backend Python dependencies
-│
-├── frontend/
-│   ├── app.py               # Streamlit chat UI
-│   └── requirements.txt     # Frontend Python dependencies
-│
-├── .gitignore               # Files to ignore for Git
-└── README.md                # This file
+
+# WorkFlow
+<img width="1536" height="1024" alt="generated-image (2)" src="https://github.com/user-attachments/assets/6026baa6-6336-4373-aae2-f3948689b15a" />
 
 **2. Working Demo (Local Setup)**
 The application is designed to run locally, ensuring data privacy. To run the demo, you will need to start the backend server and the frontend application in two separate terminals. The complete instructions are provided in the Setup and Installation section below.
@@ -53,10 +42,10 @@ ollama pull llama3
 
 Navigate to the backend directory, install dependencies, and start the server.
 
-# Go into the backend folder
+**Go into the backend folder**
 cd backend
 
-# Create and activate a virtual environment (recommended)
+**Create and activate a virtual environment (recommended)**
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
@@ -84,11 +73,9 @@ pip install -r requirements.txt
 # Run the Streamlit app
 streamlit run app.py
 
-Your browser will open with the chat interface at http://localhost:8501.
+Your browser will open with the chat interface at https://hrchatbot-doyzhqzgzyo6jkgwks5ji4.streamlit.app.
 
 **API Documentation**
-
-The backend provides RESTful endpoints. Interactive documentation is also available via Swagger UI at http://127.0.0.1:8000/docs.
 
 GET /employees/search
 Performs a simple keyword search over the employee dataset.
@@ -112,8 +99,10 @@ Success Response (200 OK):
   "response": "Based on your query, Dr. Sarah Chen seems like an excellent fit..."
 }
 
-**Architecture Overview**
+# Architecture Overview
 The application follows a decoupled frontend-backend architecture.
+
+<img width="1536" height="1024" alt="generated-image" src="https://github.com/user-attachments/assets/59a77941-d3b2-4c8f-a27e-39df25d07574" />
 
 **User Interaction:** The user types a query into the Streamlit frontend.
 
