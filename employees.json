@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "skills": ["Python", "React", "AWS", "Machine Learning", "TensorFlow"],
+    "experience_years": 5,
+    "past_projects": ["E-commerce Platform Recommendation Engine", "Healthcare Predictive Analytics Dashboard"],
+    "availability": "available"
+  },
+  {
+    "id": 2,
+    "name": "Bob Williams",
+    "skills": ["Java", "Spring Boot", "Docker", "Kubernetes", "Microservices"],
+    "experience_years": 8,
+    "past_projects": ["Banking API Gateway", "Cloud Migration for Finance Corp"],
+    "availability": "on-project"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "skills": ["JavaScript", "Node.js", "Express", "MongoDB", "GraphQL"],
+    "experience_years": 4,
+    "past_projects": ["Real-time Chat Application", "Social Media API"],
+    "availability": "available"
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "skills": ["React Native", "iOS", "Android", "Firebase", "TypeScript"],
+    "experience_years": 6,
+    "past_projects": ["Mobile Banking App", "On-demand Delivery Service App"],
+    "availability": "available"
+  },
+  {
+    "id": 5,
+    "name": "Ethan Hunt",
+    "skills": ["DevOps", "CI/CD", "Jenkins", "Ansible", "Terraform", "AWS"],
+    "experience_years": 7,
+    "past_projects": ["Infrastructure as Code for a SaaS Platform", "Automated Deployment Pipeline for Microservices"],
+    "availability": "on-project"
+  },
+  {
+    "id": 6,
+    "name": "Fiona Glenanne",
+    "skills": ["UI/UX Design", "Figma", "Sketch", "Adobe XD", "User Research"],
+    "experience_years": 5,
+    "past_projects": ["Redesign of a Major E-commerce Website", "User Experience Study for a Healthcare App"],
+    "availability": "available"
+  },
+  {
+    "id": 7,
+    "name": "George Costanza",
+    "skills": ["Python", "Pandas", "NumPy", "Scikit-learn", "SQL"],
+    "experience_years": 3,
+    "past_projects": ["Customer Churn Prediction Model", "Sales Data Analysis and Visualization"],
+    "availability": "available"
+  },
+  {
+    "id": 8,
+    "name": "Hannah Abbott",
+    "skills": ["C#", ".NET Core", "Azure", "SQL Server"],
+    "experience_years": 9,
+    "past_projects": ["Enterprise Resource Planning (ERP) System", "Azure Cloud Services Integration"],
+    "availability": "on-project"
+  },
+  {
+    "id": 9,
+    "name": "Ian Malcolm",
+    "skills": ["Go", "Docker", "Kubernetes", "Prometheus", "gRPC"],
+    "experience_years": 6,
+    "past_projects": ["High-Performance Trading System", "Distributed Logging Platform"],
+    "availability": "available"
+  },
+  {
+    "id": 10,
+    "name": "Jane Smith",
+    "skills": ["Python", "Django", "PostgreSQL", "Celery", "Redis"],
+    "experience_years": 7,
+    "past_projects": ["Content Management System for a Media Company", "Background Task Processing for a Data Pipeline"],
+    "availability": "on-project"
+  },
+  {
+    "id": 11,
+    "name": "Kevin McCallister",
+    "skills": ["Angular", "TypeScript", "RxJS", "Ngrx", "CSS"],
+    "experience_years": 4,
+    "past_projects": ["Single Page Application for a CRM", "Interactive Data Dashboard"],
+    "availability": "available"
+  },
+  {
+    "id": 12,
+    "name": "Laura Croft",
+    "skills": ["Data Engineering", "Apache Spark", "Hadoop", "Kafka", "Airflow"],
+    "experience_years": 8,
+    "past_projects": ["Real-time Data Streaming Pipeline", "Big Data Warehouse for Retail Analytics"],
+    "availability": "on-project"
+  },
+  {
+    "id": 13,
+    "name": "Michael Scott",
+    "skills": ["Project Management", "Agile", "Scrum", "JIRA", "Confluence"],
+    "experience_years": 10,
+    "past_projects": ["Led the development of a new SaaS product", "Managed cross-functional teams for a mobile app launch"],
+    "availability": "available"
+  },
+  {
+    "id": 14,
+    "name": "Nina Myers",
+    "skills": ["Cybersecurity", "Penetration Testing", "Wireshark", "Metasploit", "Network Security"],
+    "experience_years": 6,
+    "past_projects": ["Security Audit for a Financial Institution", "Vulnerability Assessment for a Web Application"],
+    "availability": "available"
+  },
+  {
+    "id": 15,
+    "name": "Oscar Martinez",
+    "skills": ["Vue.js", "Nuxt.js", "Tailwind CSS", "Jest", "Cypress"],
+    "experience_years": 5,
+    "past_projects": ["Static Site Generation for a Marketing Website", "End-to-end testing for a Vue application"],
+    "availability": "on-project"
+  },
+  {
+    "id": 16,
+    "name": "Dr. Sarah Chen",
+    "skills": ["Machine Learning", "PyTorch", "Computer Vision", "NLP", "Medical Data Processing"],
+    "experience_years": 6,
+    "past_projects": ["Medical Diagnosis Platform using X-ray analysis", "Patient Risk Prediction System"],
+    "availability": "available"
+  }
+]
